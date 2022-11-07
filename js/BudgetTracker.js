@@ -104,8 +104,6 @@ export default class BudgetTracker {
       return total + amount * modifier
     }, 0)
 
-    console.log(total)
-
     const summary = this.root.querySelector('[data-id ="total"]')
     total < 0 ? summary.classList.add('red') : summary.classList.remove('red')
     const totalFormated = new Intl.NumberFormat('en-US', {
