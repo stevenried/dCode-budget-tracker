@@ -8,6 +8,7 @@
 .expense-tracker {
   border-collapse: collapse;
   min-width: var(--min-width);
+  margin-inline: auto;
 }
 
 .expense-tracker * {
@@ -39,6 +40,10 @@
   outline: none;
 }
 
+.input-amount {
+  text-align: right;
+}
+
 .input:focus {
   border-color: #bbb;
 }
@@ -63,4 +68,8 @@
 .controls,
 .summary {
   text-align: right;
+}
+
+.red {
+  color: red;
 }
